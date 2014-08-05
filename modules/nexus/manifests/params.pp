@@ -21,7 +21,7 @@
 #
 class nexus::params {
   # See nexus::package on why this won't increment the package version.
-  $version        = 'latest'
+  $version        = '2.8.0'
   $revision       = '01'
   $download_site  = 'http://www.sonatype.org/downloads'
   $nexus_root     = '/srv'
