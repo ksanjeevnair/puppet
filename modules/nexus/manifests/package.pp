@@ -43,10 +43,10 @@ class nexus::package (
   $full_version    = "${version}"
   #$full_version    = "${version}-${revision}"
 
-  $nexus_archive   = "nexus-${full_version}-bundle.tar.gz"
+  $nexus_archive   = "nexus-${full_version}-${revision}-bundle.tar.gz"
   $download_url    = "${download_site}/${nexus_archive}"
   $dl_file         = "${nexus_root}/${nexus_archive}"
-  $nexus_home_real = "${nexus_root}/nexus-${full_version}"
+  $nexus_home_real = "${nexus_root}/nexus-${full_version}-${revision}"
 
   # NOTE: When setting version to 'latest' the site redirects to the latest
   # release. But, nexus-latest-bundle.tar.gz will already exist and
