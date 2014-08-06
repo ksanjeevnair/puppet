@@ -40,7 +40,8 @@ class nexus::package (
   $nexus_home      = "${nexus_root}/${nexus_home_dir}"
   $nexus_work      = "${nexus_root}/${nexus::params::nexus_work_dir}"
 
-  $full_version    = "${version}-${revision}"
+  $full_version    = "${version}"
+  #$full_version    = "${version}-${revision}"
 
   $nexus_archive   = "nexus-${full_version}-bundle.tar.gz"
   $download_url    = "${download_site}/${nexus_archive}"
