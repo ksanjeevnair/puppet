@@ -19,7 +19,7 @@
 
 # Define filebucket 'main':
 filebucket { 'main':
-  server => 'puppet-master.puppet-prow.h5.internal.cloudapp.net',
+  server => 'ec2-54-200-219-167.us-west-2.compute.amazonaws.com',
   path   => false,
 }
 
